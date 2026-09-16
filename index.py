@@ -1,4 +1,4 @@
-# JWT API SRC BY: @TEZZKNOX
+# JWT API SRC BY: @MINISTER_69
 # CHANNEL: @MINISTER_6T9
 # LIKE GROUP: @MINISTER_LIKES
 from flask import Flask, request, jsonify
@@ -19,9 +19,9 @@ import output_pb2
 app = Flask(__name__)
 
 # ---------- Constants ----------
-MAJOR_LOGIN_URL = "https://loginbp.ppmainecoonghj.com/MajorLogin"
+MAJOR_LOGIN_URL = "http://loginbp.ppmainecoonghj.com/MajorLogin"
 OAUTH_URL = "https://100067.connect.garena.com/oauth/guest/token/grant"
-FREEFIRE_VERSION = "OB55"
+FREEFIRE_VERSION = "OB54"
 
 KEY = bytes([89, 103, 38, 116, 99, 37, 68, 69, 117, 104, 54, 37, 90, 99, 94, 56])
 IV = bytes([54, 111, 121, 90, 68, 114, 50, 50, 69, 51, 121, 99, 104, 106, 77, 37])
@@ -178,9 +178,9 @@ def perform_guest_login(uid, password):
 @app.route('/', methods=['GET'])
 def index():
     return jsonify({
-        "api": "JWT Generator API (OB55)",
-        "credit": "@TEZZKNOX",
-        "telegram": "@TEZZKNOX",
+        "api": "JWT Generator API (OB54)",
+        "credit": "@minister_69",
+        "telegram": "@minister_69",
         "status": "running on Vercel ✅",
         "endpoints": {
             "/token": {
@@ -241,6 +241,6 @@ app = app  # Make sure app is exported
 def handler(request, context):
     return app(request, context)
     
-# JWT API SRC BY: @TEZZKNOX
-# CHANNEL: @TEZZKNOX
-# LIKE GROUP: @TEZZKNOX
+# JWT API SRC BY: @MINISTER_69
+# CHANNEL: @MINISTER_6T9
+# LIKE GROUP: @MINISTER_LIKES
